@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML Canvas</title>
+</head>
+<body>
+   
+   <!--
+   HTML Canvas Graphics
+   
+   The HTML <canvas> element is used to draw graphics on a web page.
+
+   The graphic to the left is created with <canvas>. It shows four elements: a red rectangle, a gradient rectangle, a multicolor rectangle, and a multicolor text.
+
+   What is HTML Canvas?
+   The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+
+   The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+
+   Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+
+   Canvas is supported by all major browsers.
+   -->
+
+   <canvas id="myCanvas" width="200" height="100" style="border: 2px solid red;"></canvas>
+   <canvas id="myCanvas0" width="200" height="100" style="border: 2px solid red;"></canvas>
+   <canvas id="myCanvas1" width="200" height="100" style="border: 2px solid red;"></canvas>
+   <canvas id="myCanvas2" width="200" height="100" style="border: 2px solid red;"></canvas>
+   <canvas id="myCanvas3" width="200" height="100" style="border: 2px solid red;"></canvas>
+   <canvas id="myCanvas4" width="200" height="100" style="border: 2px solid red;"></canvas>
+   <canvas id="myCanvas5" width="200" height="100" style="border: 2px solid red;"></canvas>
+
+   <script>
+      let t = document.getElementById('myCanvas');
+      let tx = t.getContext("2d");
+      tx.moveTo(0, 0);
+      tx.lineTo(200, 100);
+      tx.stroke();
+
+      let a = document.getElementById('myCanvas0');
+      let ax = a.getContext("2d");
+      ax.beginPath();
+      ax.arc(95, 50, 40, 0, 2 * Math.PI);
+      ax.stroke();
+
+      let b = document.getElementById("myCanvas1");
+      let bx = b.getContext("2d");
+      bx.font = "30px Arial";
+      bx.fillText("HaSaN", 10, 50);
+
+      let c = document.getElementById("myCanvas2");
+      let cx = c.getContext("2d");
+      cx.font = "30px Arial";
+      cx.strokeText("HaSaN", 10, 50);
+
+      let d = document.getElementById("myCanvas3");
+      let dx = d.getContext("2d");
+      // Create gradient
+      let grd = dx.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      // Fill with gradient
+      dx.fillStyle = grd;
+      dx.fillRect(10, 10, 150, 80);
+
+      let e = document.getElementById("myCanvas4");
+      let ex = e.getContext("2d");
+      // Create gradient
+      let grde = ex.createRadialGradient(75, 50, 5, 90, 60, 100);
+      grde.addColorStop(0, "red");
+      grde.addColorStop(1, "white");
+      // Fill with gradient
+      ex.fillStyle = grde;
+      ex.fillRect(10, 10, 150, 80);
+
+      var f = document.getElementById("myCanvas5");
+      var fx = f.getContext("2d");
+      var img = document.getElementById("scream");
+      fx.drawImage(img, 10, 10);
+
+   </script>
+
+</body>
+</html>

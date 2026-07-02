@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>HTML Classes</title>
+      <style>
+         .class-div {
+            background: tomato;
+            color: black;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+         }
+         h1 {
+            text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+
+      <!--
+      The HTML class attribute is used to specify a class for an HTML element.
+      Multiple HTML elements can share the same class.
+
+      The class Attribute
+
+      *The class attribute is often used to point to a class name in a style sheet. It can also be used by JavaScript to access and manipulate elements with the specific class name.
+      *In the following example we have three <div> elements with a class attribute with the value of "city". All of the three <div> elements will be styled equally according to the .city style definition in the head section:
+
+      The Syntax For Class
+      
+      *To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}:
+      -->
+
+      <h1>This is HaSaN</h1>
+
+      <div class="class-div">
+         <h2>Lorem ipsum dolor sit amet.</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem porro, placeat et nihil quam enim eum delectus sapiente incidunt.</p>
+      </div>
+
+      <div class="class-div">
+         <h2>Lorem ipsum dolor sit amet.</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem porro, placeat et nihil quam enim eum delectus sapiente incidunt.</p>
+      </div>
+
+      <div class="class-div">
+         <h2>Lorem ipsum dolor sit amet.</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem porro, placeat et nihil quam enim eum delectus sapiente incidunt.</p>
+      </div>
+
+      <div>
+         <h2>Lorem ipsum dolor sit amet.</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem porro, placeat et nihil quam enim eum delectus sapiente incidunt.</p>
+      </div>
+
+      <button onclick="myFunction()">Element Hide</button>
+      <button onclick="myFunc()">Show Element</button>
+
+      <script>
+         function myFunction() {
+            var x = document.getElementsByClassName("class-div");
+            for (var i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+         }
+
+         function myFunc() {
+            var x = document.getElementsByClassName("class-div");
+            for (var i = 0; i < x.length; i++) {
+               x[i].style.display = "inline-block";
+            }
+         }
+      </script>
+
+   </body>
+</html>

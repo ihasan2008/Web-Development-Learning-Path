@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>HTML Images</title>
+   </head>
+   <body>
+
+      <!--
+
+      HTML Images Syntax
+
+      The HTML <img> tag is used to embed an image in a web page.
+
+      Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+      The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+      The <img> tag has two required attributes:
+
+         src - Specifies the path to the image
+         alt - Specifies an alternate text for the image
+
+      <img src="url" alt="alternatetext">
+
+      -->
+
+      <!-- //Images// -->
+
+      <img src="photo1.png" alt="Photo 1" width="50%">
+      <img src="photo2.png" alt="Photo 2" width="50%">
+      <img src="/0 - HTML/task 12 - HTML5 - Links - 27.10.2025/point.jpg" alt="photo" width="50%">
+
+      <!-- //Images Map// -->
+
+      <img src="photo1.png" alt="photo 1" usemap="#workmap">
+
+      <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+      <map name="workmap">
+         <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+         <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+         <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+      </map>
+
+      <!-- //Background Images// -->
+
+      <p style="background-image: url(photo1.png); width: 150px; height: 600px; background-repeat: no-repeat; background-size: 200px; opacity: 0.8;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, aperiam?</p>
+
+      <!-- //<picture> Element// -->
+
+      <picture>
+         <source media="(min-width: 650px)" srcset="photo1.png">
+         <source media="(min-width: 465px)" srcset="photo2.png">
+         <img src="/0 - HTML/task 1 - HTML5 - Basic - 22.10.2025/imranfv-ytt.png" style="width:auto;">
+      </picture>
+
+   </body>
+</html>
