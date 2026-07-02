@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML Audio</title>
+</head>
+<body>
+   
+   <audio controls>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+   </audio>
+
+   <!--
+   HTML Audio - How It Works
+
+   The controls attribute adds audio controls, like play, pause, and volume.
+   The <source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+   The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+   -->
+
+   <audio controls autoplay>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+   </audio>
+
+   <audio controls autoplay muted>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+   </audio>
+
+</body>
+</html>

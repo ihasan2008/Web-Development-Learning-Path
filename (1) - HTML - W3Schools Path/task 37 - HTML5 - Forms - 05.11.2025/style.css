@@ -1,0 +1,26 @@
+body {
+   display: flex;
+   justify-content: center;
+}
+form {
+   background: rgb(171, 207, 177);
+   border: none;
+   border-radius: 20px;
+   padding: 50px;
+   margin: 20px;
+}
+input, button {
+   display: block;
+   margin: 10px;
+   padding: 7px 20px;
+   border: none;
+   border-radius: 10px;
+}
+button {
+   background: rgb(1, 187, 1);
+   color: black;
+   font-weight: 600;
+}
+button:hover {
+   background: rgb(5, 168, 5);
+}

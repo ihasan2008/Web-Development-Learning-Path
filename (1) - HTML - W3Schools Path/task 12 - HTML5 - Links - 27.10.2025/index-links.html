@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>HTML Links</title>
+   </head>
+   <style>
+      #a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+      }
+      #a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+      }
+      #a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+      #a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+      }
+
+      #a-1:link, a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      }
+      #a-1:hover, a:active {
+      background-color: red;
+      }
+   </style>
+   <body>
+
+      <h1>HTML links</h1>
+
+      <!-- //Links// -->
+
+      <!--
+      HTML Links - Syntax
+
+      *The HTML <a> tag defines a hyperlink. It has the following syntax:
+
+         <a href="URL">Link Text</a>
+      -->
+
+      <a href="https://www.youtube.com/ihasan2008">My Youtube Channel Link</a>
+
+      <!--
+      HTML Links - The target Attribute
+
+      By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+      The target attribute specifies where to open the linked document.
+
+      The target attribute can have one of the following values:
+
+         _self - Default. Opens the document in the same window/tab as it was clicked
+         _blank - Opens the document in a new window or tab
+         _parent - Opens the document in the parent frame
+         _top - Opens the document in the full body of the window
+      -->
+
+      <a href="https://www.facebook.com/ihasan2008" target="_blank">facebook</a>
+
+      <h2>Absolute URLs</h2>
+      <p><a href="https://www.youtube.com/ihasan2008" target="_blank">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, labore? //youtube</a></p>
+      <p><a href="https://www.facebook.com/ihasan2008" target="_blank">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, labore? //facebook</a></p>
+
+      <h2>Relative URLs</h2>
+      <a href="HTML.docx">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut velit, inventore laboriosam maxime quod incidunt libero dolore. Dolor, eaque optio!</a>
+
+         <br>
+
+      <a href="HTML.docx">
+         <img src="point.jpg" alt="image" style="width: 100px;">
+      </a>
+
+      <br>
+
+      <a href="mailto:wshasan2008@gmail.com">E-mail now</a>
+      <br>
+      <button onclick="document.location='HTML.docx'" title="Hyper Text Markup Language">HTML</button>
+      <br>
+
+      <!-- //Links Color// -->
+
+      <a href="https://www.facebook.com/ihasan2008" id="a">Lorem ipsum dolor sit amet.</a>
+      <br>
+      <a href="https://www.facebook.com/ihasan2008" id="a-1">Lorem ipsum dolor sit amet.</a>
+
+      <!-- //Bookmarks// -->
+
+      <!-- 
+      *একটি পৃষ্ঠায় বুকমার্ক সংজ্ঞায়িত করতে id(id=" value ") বৈশিষ্ট্যটি ব্যবহার করুন ।
+      *বুকমার্কের সাথে লিঙ্ক করতে href(href="# value ") অ্যাট্রিবিউট ব্যবহার করুন । 
+      -->
+
+      <h2 id="C4">Lorem ipsum dolor sit amet.</h2>
+      <a href="#C4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, numquam!</a>
+      <a href="demo.html#C4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed reprehenderit laudantium deserunt quaerat corrupti eius.</a>
+
+   </body>
+</html>

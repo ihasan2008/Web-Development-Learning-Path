@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>HTML Id</title>
+      <style>
+         #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+         }
+         .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+         }
+      </style>
+   </head>
+   <body>
+      
+      <!--
+      The HTML id attribute is used to specify a unique id for an HTML element.
+      You cannot have more than one element with the same id in an HTML document.
+
+      The id Attribute
+
+      *The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+
+      *The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+      *The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.
+
+      *In the following example we have an <h1> element that points to the id name "myHeader". This <h1> element will be styled according to the #myHeader style definition in the head section:
+      -->
+
+      <!-- An element with a unique id -->
+      <h1 id="myHeader">My Cities</h1>
+
+      <!-- Multiple elements with same class -->
+      <h2 class="city">London</h2>
+      <p>London is the capital of England.</p>
+
+      <h2 class="city">Paris</h2>
+      <p>Paris is the capital of France.</p>
+
+      <h2 class="city">Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+
+   </body>
+</html>
